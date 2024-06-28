@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+        <h1>Transportation Management System</h1>
+    </header>
+    <main>
+        <section class="vehicle-section">
+            <h2>Vehicles</h2>
+            <button onclick="showInput('vehicle')">Add Vehicle</button>
+            <div id="vehicleInput" class="input-container">
+                <input type="text" id="vehicleName" placeholder="Enter vehicle name">
+                <button onclick="addVehicle()">Enter</button>
+            </div>
+            <div id="vehicles"></div>
+        </section>
+        <section class="driver-section">
+            <h2>Drivers</h2>
+            <button onclick="showInput('driver')">Add Driver</button>
+            <div id="driverInput" class="input-container">
+                <input type="text" id="driverName" placeholder="Enter driver name">
+                <button onclick="addDriver()">Enter</button>
+            </div>
+            <div id="drivers"></div>
+        </section>
+        <section class="route-section">
+            <h2>Routes</h2>
+            <button onclick="showInput('route')">Add Route</button>
+            <div id="routeInput" class="input-container">
+                <input type="text" id="routeName" placeholder="Enter route name">
+                <button onclick="addRoute()">Enter</button>
+            </div>
+            <div id="routes"></div>
+        </section>
+        <section class="trip-section">
+            <h2>Trips</h2>
+            <button onclick="showInput('trip')">Schedule Trip</button>
+            <div id="tripInput" class="input-container">
+                <input type="text" id="tripName" placeholder="Enter trip name">
+                <button onclick="scheduleTrip()">Enter</button>
+            </div>
+            <div id="trips"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
